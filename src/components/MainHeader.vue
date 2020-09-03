@@ -1,0 +1,80 @@
+<template>
+  <div id="mainHeader" class="main-header">
+    <div class="las-mejores-raquetas">
+      <span>{{message}}</span><span class="text-style-1">{{title}}</span>
+    </div>
+    <div>
+      <span class="rectangle">{{aboutBtn}}</span>
+    </div>
+  </div>
+</template>
+<script>
+  export default {
+    data() {
+      return {
+        message: 'Las mejores raquetas para jugar',
+        title: 'Tennis',
+        aboutBtn: 'acerca de nosotros'
+      }
+    },
+    methods: {
+
+    },
+    computed: {
+
+    },
+    created() {
+
+    }
+  }
+</script>
+<style>
+  .main-header {
+    --var-color-white: #ffffff;
+    height: 10rem;
+    width: 100%;
+    background-image: url("https://i.ibb.co/c6j0Zt3/group.png");
+    background-color: #2c3e50;
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: var(--var-color-white, #ffffff);
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .las-mejores-raquetas {
+    --var-color-white: #ffffff;
+    margin: 2rem 1rem 1rem 3rem;
+    font-size: 2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.28;
+    letter-spacing: -0.05px;
+    color: var(--var-color-white, #ffffff);
+
+  }
+
+  .text-style-1 {
+    --var-sticky-yellow: #cbe346;
+    margin: 0 0 0 0.5rem;
+    color: var(--var-sticky-yellow, #cbe346);
+    font-weight: bold;
+  }
+
+  .rectangle {
+    --var-color-white: #ffffff;
+    text-transform: uppercase;
+    width: 269px;
+    height: 53px;
+    border-radius: 26.5px;
+    border: 1px solid var(--var-color-white, #ffffff);
+    margin: 2rem;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
+</style>
