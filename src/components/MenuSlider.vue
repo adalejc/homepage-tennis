@@ -1,11 +1,11 @@
 <template>
   <div class="menu-container">
     <div class="menu-slider" v-if="enabled">
+      <span class="close-btn" href="#" v-on:click="openNav">X</span>
       <ul>
         <li v-for="item of items">
           <span>{{item.name}}</span>
         </li>
-        <a href="#" v-on:click="openNav">Cerrar</a>
       </ul>
     </div>
 
@@ -49,9 +49,7 @@
     position: absolute;
     margin: 1rem;
     --var-color-white: #ffffff;
-
     height: 37px;
-
     font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
@@ -60,21 +58,36 @@
     letter-spacing: 1.5px;
     color: var(--var-color-white, #ffffff);
   }
+  .close-btn {
+    text-align: left;
+    left: 0;
+    position: absolute;
+    margin: 1rem;
+  }
   .menu-slider {
     --var-menu-title: #fff;
     left: 0;
     top: 0;
     right: 0;
-    text-align: left;
+    bottom: 0;
+
 
     color: var(--var-menu-title, #ffffff);
+    background-color: #000;
+    opacity: 0.8;
+    position: fixed;
+    font-size: 2rem;
+    overflow: hidden;
   }
   .menu-slider ul {
     list-style: none;
   }
 
+  .menu-slider > ul > li {
+    margin: 1rem;
+  }
+
   .top-nav {
     left: 0;
-
   }
 </style>

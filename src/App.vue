@@ -14,7 +14,6 @@
 </template>
 
 <script>
-//import HelloWorld from './components/HelloWorld.vue'
 import MenuSlider from "@/components/MenuSlider";
 import MainHeader from "@/components/MainHeader";
 import ProductList from "@/components/ProductList";
