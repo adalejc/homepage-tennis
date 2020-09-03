@@ -1,12 +1,14 @@
 <template>
   <div class="footer-container">
-    <div v-for="item of items">
-      <span class="footer-item">{{item.name}}</span>
+    <div class="footer-menu">
+      <div class="footer-item" v-for="item of items">
+        {{item.name}}
+      </div>
     </div>
     <div class="logo-container">
       <span  v-for="item of social">
-      <img class="logo" :src="`${item.url}`" :alt="`${item.name}`">
-    </span>
+        <img class="logo" :src="`${item.url}`" :alt="`${item.name}`">
+      </span>
     </div>
   </div>
 </template>
@@ -51,7 +53,7 @@ export default {
   }
 
   .footer-container .logo-container {
-    margin: 1rem;
+    margin: 1rem 0 0 0;
   }
 
   .footer-container .logo-container .logo {
@@ -59,5 +61,18 @@ export default {
     height: 31px;
     object-fit: contain;
     margin: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .footer-item {
+      min-width: 50px;
+      padding: 0 1rem;
+      display: inline;
+    }
+
+    .logo-container {
+      float: left;
+      margin: 1rem 0 0 0;
+    }
   }
 </style>

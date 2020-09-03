@@ -17,33 +17,21 @@
         aboutBtn: 'acerca de nosotros'
       }
     },
-    methods: {
-
-    },
-    computed: {
-
-    },
-    created() {
-
-    }
   }
 </script>
 <style>
   .main-header {
     --var-color-white: #ffffff;
-    height: 10rem;
+    min-height: 230px;
     width: 100%;
     background-image: url("https://i.ibb.co/c6j0Zt3/group.png");
     background-color: #2c3e50;
-
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     color: var(--var-color-white, #ffffff);
     text-align: left;
     justify-content: center;
     align-items: center;
-
-
   }
 
   .las-mejores-raquetas {
@@ -56,7 +44,6 @@
     line-height: 1.28;
     letter-spacing: -0.05px;
     color: var(--var-color-white, #ffffff);
-
   }
 
   .text-style-1 {
@@ -73,8 +60,29 @@
     height: 53px;
     border-radius: 26.5px;
     border: 1px solid var(--var-color-white, #ffffff);
-    margin: 2rem;
+    margin: 2rem 0 0 3rem;
     padding: 0.2rem;
     font-size: 0.8rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .main-header {
+      min-height: 330px;
+    }
+
+    .las-mejores-raquetas {
+      width: 309px;
+      padding: 4rem 0 0 4rem;
+    }
+
+    .rectangle {
+      margin: 2rem 0 0 7rem;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .main-header {
+      height: 785px;
+    }
   }
 </style>

@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <div>
-      <carousel :adjustableHeight="true" :per-page="1" :mouse-drag="false">
-        <slide v-for="product of productImages" v-bind:key="product.id">
-          <div class="item-product" :style="{'background-image':`url(${product.img})`}">
-            <div class="nuestras-raquetas">{{product.title}}</div>
-            <div class="description">{{product.description}}</div>
-          </div>
-        </slide>
-      </carousel>
-    </div>
+  <div class="carousel-container">
+    <carousel :adjustableHeight="true" :per-page="1" :mouse-drag="false">
+      <slide v-for="product of productImages" v-bind:key="product.id">
+        <div class="item-product" :style="{'background-image':`url(${product.img})`}">
+          <div class="nuestras-raquetas">{{product.title}}</div>
+          <div class="description">{{product.description}}</div>
+        </div>
+      </slide>
+    </carousel>
   </div>
 </template>
 <script>
@@ -64,9 +62,8 @@
     line-height: 1.28;
     letter-spacing: -0.06px;
     color: var(--var-color-white, #ffffff);
-    margin: 0 0 0 8rem;
     text-align: right;
-    padding: 1rem 0;
+    display: inline-flex;
   }
 
   .description {
@@ -79,8 +76,8 @@
     line-height: 1.67;
     letter-spacing: 0.51px;
     color: var(--var-color-white, #ffffff);
-    margin: 0 0 0 3rem;
-    text-align: left;
-    padding: 1rem 0;
+
+    text-align: right;
+    display: inline-flex;
   }
 </style>

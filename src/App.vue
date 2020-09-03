@@ -4,8 +4,14 @@
       <MenuSlider></MenuSlider>
       <MainHeader></MainHeader>
       <ProductList></ProductList>
-      <ProductImages></ProductImages>
-      <ProductsFavorite></ProductsFavorite>
+      <div class="product-overview-main">
+        <div class="carousel-main">
+          <ProductImages></ProductImages>
+        </div>
+        <div class="product-main">
+          <ProductsFavorite></ProductsFavorite>
+        </div>
+      </div>
       <ImageBottom></ImageBottom>
       <Footer></Footer>
     </div>
@@ -58,5 +64,25 @@ export default {
 body {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 768px) {
+  .product-overview-main {
+    display: flex;
+  }
+
+  .product-overview-main .carousel-main {
+    width: 40%;
+  }
+
+  .product-overview-main .product-main {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-overview-main .carousel-main {
+    width: 35%;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="product-list-container">
     <div v-for="item in productList">
-      <div>
+      <div class="item-image">
         <img :src="`${item.img}`" alt="">
       </div>
     </div>
@@ -31,6 +31,11 @@ export default {
 </script>
 <style>
 .product-list-container {
-  margin: 0 0 2rem 0;
+  margin: 1rem;
+  display: flex;
+  overflow: auto;
 }
+ .product-list-container .item-image {
+    margin: 0 0 0 1rem;
+ }
 </style>

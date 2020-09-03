@@ -37,13 +37,11 @@
   }
 </script>
 <style>
-  :root {
-    display: block;
-  }
+
   .product-list {
     height: 10rem;
     background-color: #f3f4f8;
-    padding: 1rem;
+    padding: 2rem;
   }
 
   .raquetas-accesorios {
@@ -62,7 +60,6 @@
   }
 
   .about-product {
-
     font-size: 1rem;
     font-weight: normal;
     font-stretch: normal;
@@ -82,5 +79,11 @@
 
   .btn-product {
     margin: 2rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .raquetas-accesorios {
+      font-size: 2rem;
+    }
   }
 </style>
