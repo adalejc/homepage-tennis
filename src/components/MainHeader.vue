@@ -72,17 +72,30 @@
 
     .las-mejores-raquetas {
       width: 309px;
-      padding: 4rem 0 0 4rem;
+      padding: 2rem 0 1rem 4rem;
     }
 
     .rectangle {
       margin: 2rem 0 0 7rem;
+      padding: 1rem;
     }
   }
 
   @media (min-width: 1025px) {
     .main-header {
-      height: 785px;
+      min-height: 730px;
+    }
+
+    .las-mejores-raquetas {
+      font-size: 4rem;
+      margin: 8rem 1rem 4rem 8rem;
+      width: 800px;
+    }
+
+    .rectangle {
+      font-size: 1.5rem;
+      padding: 1rem;
+      margin: 8rem;
     }
   }
 </style>

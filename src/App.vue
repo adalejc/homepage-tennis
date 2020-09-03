@@ -84,5 +84,9 @@ body {
   .product-overview-main .carousel-main {
     width: 35%;
   }
+
+  .product-overview-main .product-main {
+    width: 65%;
+  }
 }
 </style>
