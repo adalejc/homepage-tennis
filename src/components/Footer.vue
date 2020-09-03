@@ -4,8 +4,8 @@
       <span class="footer-item">{{item.name}}</span>
     </div>
     <div class="logo-container">
-      <span  v-for="item of logos">
-      <img class="logo" :src="`${item.url}`" alt="Facebook">
+      <span  v-for="item of social">
+      <img class="logo" :src="`${item.url}`" :alt="`${item.name}`">
     </span>
     </div>
   </div>
@@ -20,12 +20,12 @@ export default {
         { name: 'Historia', to: '/history' },
         { name: 'Contacto', to: '/contact' },
       ],
-      logos: [
-        { url: 'https://i.ibb.co/MCwfmyw/group-22-3x.png'},
-        { url: 'https://i.ibb.co/6tq4MXH/group-23-3x.png'},
-        { url: 'https://i.ibb.co/mJ6zvZ6/group-24-3x.png'},
-        { url: 'https://i.ibb.co/2vTwsdS/group-25-3x.png'},
-        { url: 'https://i.ibb.co/xz2B1Nt/group-26-3x.png'}
+      social: [
+        { name: 'twitter', url: 'https://i.ibb.co/MCwfmyw/group-22-3x.png'},
+        { name: 'linkedln', url: 'https://i.ibb.co/6tq4MXH/group-23-3x.png'},
+        { name: 'vimeo', url: 'https://i.ibb.co/mJ6zvZ6/group-24-3x.png'},
+        { name: 'instagram', url: 'https://i.ibb.co/2vTwsdS/group-25-3x.png'},
+        { name: 'facebook', url: 'https://i.ibb.co/xz2B1Nt/group-26-3x.png'}
       ]
     }
   }
