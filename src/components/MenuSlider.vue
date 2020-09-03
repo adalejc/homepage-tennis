@@ -8,6 +8,11 @@
         </li>
       </ul>
     </div>
+    <div class="slide-menu-large">
+      <span class="menu-item" v-for="item of items">
+        {{item.name}}
+      </span>
+    </div>
 
     <nav class="top-nav" v-if="!enabled">
       <a href="#" v-on:click="openNav">
@@ -41,8 +46,8 @@
   }
 </script>
 <style>
-  :root {
-    display: block;
+  .slide-menu-large {
+    display: none;
   }
   .menu-container {
     z-index: 2;
@@ -70,8 +75,6 @@
     top: 0;
     right: 0;
     bottom: 0;
-
-
     color: var(--var-menu-title, #ffffff);
     background-color: #000;
     opacity: 0.8;
@@ -89,5 +92,22 @@
 
   .top-nav {
     left: 0;
+  }
+
+  @media (min-width: 768px)  {
+    .top-nav {
+      display: none;
+    }
+
+    .slide-menu-large {
+      display: block;
+      margin: 1rem 0 0 2rem;
+    }
+
+    .menu-item {
+      margin: 0 2rem 0 0;
+      cursor: pointer;
+    }
+
   }
 </style>

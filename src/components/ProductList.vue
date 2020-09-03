@@ -1,11 +1,17 @@
 <template>
   <div class="product-list">
-    <span class="raquetas-accesorios" v-on:click="clickProduct(item)" v-for="item in products">{{item.name}}</span>
-    <div>
-      <span class="about-product">{{description}}</span>
+    <div class="product-description-container">
+      <span class="raquetas-accesorios" v-on:click="clickProduct(item)" v-for="item in products">
+        {{item.name}}
+      </span>
+      <div>
+        <span class="about-product">{{description}}</span>
+      </div>
     </div>
-    <div class="btn-product">
-      <span class="rectangle-product">{{aboutProduct}}</span>
+    <div class="product-description-bottom">
+      <div class="btn-product">
+        <span class="rectangle-product">{{aboutProduct}}</span>
+      </div>
     </div>
   </div>
 </template>
@@ -42,6 +48,24 @@
     height: 10rem;
     background-color: #f3f4f8;
     padding: 2rem;
+
+  }
+
+  .space {
+    width: 10%;
+    display: inline-block;
+  }
+
+  .product-description-container {
+    width: 100%;
+    display: inline-block;
+
+  }
+
+  .product-description-bottom {
+    width: 100%;
+    display: inline-block;
+
   }
 
   .raquetas-accesorios {
@@ -53,6 +77,7 @@
     letter-spacing: -0.06px;
     color: #1e2335;
     margin-right: 1rem ;
+    cursor: pointer;
   }
 
   .raquetas-accesorios:hover {
@@ -84,6 +109,15 @@
   @media (min-width: 768px) {
     .product-list {
       padding: 4rem;
+      display: flex;
+    }
+
+    .product-description-container {
+      width: 80%;
+    }
+
+    .product-description-bottom {
+      width: 20%;
     }
 
     .raquetas-accesorios {
@@ -98,6 +132,5 @@
       font-size: 1.5rem;
       padding: 1rem;
     }
-
   }
 </style>

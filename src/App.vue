@@ -54,11 +54,7 @@ export default {
 .container {
   display: flex;
   flex-direction: column;
-}
-.item {
-  width: 100%;
-  height: 25%;
-  position: a;
+  overflow: hidden;
 }
 
 body {

@@ -34,7 +34,7 @@
     align-items: center;
   }
 
-  .las-mejores-raquetas {
+  .main-header .las-mejores-raquetas {
     --var-color-white: #ffffff;
     margin: 2rem 1rem 1rem 3rem;
     font-size: 2rem;
@@ -46,14 +46,14 @@
     color: var(--var-color-white, #ffffff);
   }
 
-  .text-style-1 {
+  .main-header .text-style-1 {
     --var-sticky-yellow: #cbe346;
     margin: 0 0 0 0.5rem;
     color: var(--var-sticky-yellow, #cbe346);
     font-weight: bold;
   }
 
-  .rectangle {
+  .main-header .rectangle {
     --var-color-white: #ffffff;
     text-transform: uppercase;
     width: 269px;
@@ -63,20 +63,21 @@
     margin: 2rem 0 0 3rem;
     padding: 0.2rem;
     font-size: 0.8rem;
+    cursor: pointer;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     .main-header {
-      min-height: 330px;
+      min-height: 430px;
     }
 
-    .las-mejores-raquetas {
+    .main-header .las-mejores-raquetas {
       width: 309px;
-      padding: 2rem 0 1rem 4rem;
+      padding: 6rem 0 1rem 0;
     }
 
-    .rectangle {
-      margin: 2rem 0 0 7rem;
+    .main-header .rectangle {
+      margin: 2rem 0 0 3rem;
       padding: 1rem;
     }
   }
@@ -86,13 +87,13 @@
       min-height: 730px;
     }
 
-    .las-mejores-raquetas {
+    .main-header .las-mejores-raquetas {
       font-size: 4rem;
       margin: 8rem 1rem 4rem 8rem;
       width: 800px;
     }
 
-    .rectangle {
+    .main-header .rectangle {
       font-size: 1.5rem;
       padding: 1rem;
       margin: 8rem;
