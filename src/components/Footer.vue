@@ -50,6 +50,7 @@ export default {
     line-height: normal;
     letter-spacing: 1.14px;
     color: #2b3049;
+    cursor: pointer;
   }
 
   .footer-container .logo-container {
@@ -61,6 +62,7 @@ export default {
     height: 31px;
     object-fit: contain;
     margin: 0.5rem;
+    cursor: pointer;
   }
 
   @media (min-width: 768px) {

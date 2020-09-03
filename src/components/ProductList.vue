@@ -131,6 +131,7 @@
     .rectangle-product {
       font-size: 1.5rem;
       padding: 1rem;
+      cursor: pointer;
     }
   }
 </style>
